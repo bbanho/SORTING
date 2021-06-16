@@ -1,4 +1,4 @@
-prog=arvore
+prog=sort
 #
 # define arquivos
 c_source=$(wildcard ./src/*.c)

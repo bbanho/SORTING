@@ -4,7 +4,7 @@
 
 #include "Bubble.h"
 
-#define TAM 20
+#define TAM 50000
 
 int main(){
 
@@ -17,7 +17,7 @@ int main(){
     v[i]=rand()%TAM*1.5;
   
   // ordena
-  bubble(v,TAM);
+  optimized_bubble(v,TAM);
 
   // imprime
   for(int i=0; i<TAM; i++)
