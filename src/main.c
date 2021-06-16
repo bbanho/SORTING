@@ -1,13 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #include "Bubble.h"
+
+#define TAM 20
 
 int main(){
 
-  int v[5]={3,2,5,10,8};
-  
-  bubble(v,5);
+  // seed
+  srand(time(NULL));
 
-  for(int i=0; i<5; i++)
+  // preenche com valores pseudoaleatórios
+  int v[TAM];
+  for(int i=0; i<TAM; i++)
+    v[i]=rand()%TAM*1.5;
+  
+  // ordena
+  bubble(v,TAM);
+
+  // imprime
+  for(int i=0; i<TAM; i++)
     printf("%d\n",v[i]);
 
   return 0;
