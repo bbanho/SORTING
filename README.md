@@ -1,4 +1,4 @@
-# 102_CRIPTO
+# SORTING
 
 This project is written in C and only requires c-stack devtools. It comes with a Makefile as well.
 You may run the following directives:
