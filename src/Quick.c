@@ -2,20 +2,19 @@
 
 void quicksort(TIPO_DADO *v, int init, int end){
 
-  if(end>init)
-    return;
-
-  int pivot;
-  pivot=rand_part(v, init, end);
-  quicksort(v, init, pivot-1);
-  quicksort(v, pivot+1, end);
-
+  if(end>init){
+    int pivot;
+    pivot=rand_part(v, init, end);
+    quicksort(v, init, pivot-1);
+    quicksort(v, pivot+1, end);
+  }
 }
 
 TIPO_DADO rand_part(TIPO_DADO *v, int init, int end){
 
+  srand(time(NULL));
   // k entre init e end
-  int k=rand()%((init+1)-end)+init;
+  int k=rand()%(end-init)+init;
 
   int aux=v[k];
   v[k]=v[end];

@@ -5,7 +5,7 @@
 #include "Bubble.h"
 #include "Quick.h"
 
-#define TAM 50000
+#define TAM 1000000
 
 int main(){
 
@@ -19,6 +19,9 @@ int main(){
   
   // ordena
   quicksort(v,0,TAM-1);
+
+  //bubble(v, TAM);
+  
 
   // imprime
   for(int i=0; i<TAM; i++)

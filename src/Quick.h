@@ -1,5 +1,6 @@
 #ifndef _RAND
 #include <stdlib.h>
+#include <time.h>
 
 #define _RAND
 #endif
