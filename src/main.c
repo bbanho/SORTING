@@ -3,6 +3,7 @@
 #include <time.h>
 
 #include "Bubble.h"
+#include "Quick.h"
 
 #define TAM 50000
 
@@ -17,7 +18,7 @@ int main(){
     v[i]=rand()%TAM*1.5;
   
   // ordena
-  optimized_bubble(v,TAM);
+  quicksort(v,0,TAM-1);
 
   // imprime
   for(int i=0; i<TAM; i++)
